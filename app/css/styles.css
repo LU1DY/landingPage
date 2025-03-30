@@ -160,8 +160,10 @@ header {
   }
 }
 
-.visible {
-  right: -100vw !important;
+@media (max-width: 900px) {
+  .visible {
+    right: -100vw !important;
+  }
 }
 
 #checkbox {
