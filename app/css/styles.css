@@ -57,7 +57,6 @@ header {
   position: fixed;
   & nav {
     justify-content: space-between;
-    border-bottom: 1px solid #0c0c0c;
     padding-bottom: 1rem;
     & h6 {
       font-size: 4rem;
@@ -276,15 +275,15 @@ body {
           font-weight: 500;
         }
         &:first-child {
-          background-color: #7342dd;
+          background-color: #fcbabc;
           color: #fff;
-          box-shadow: 0px 0px 20px 5px #c2c2c2;
+          box-shadow: 0px 0px 20px 5px #ecdbdc;
           column-gap: 1.5rem;
           & svg {
             fill: #f1f1f1;
           }
           & p {
-            color: #f1f1f1;
+            color: #fff;
             font-weight: 500;
           }
         }
