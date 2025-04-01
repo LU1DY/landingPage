@@ -222,17 +222,27 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  &:before {
+  & .background-body {
     content: "";
     width: 140rem;
     height: 60rem;
     background-color: #fcbabc;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 30rem;
     position: absolute;
     right: -60rem;
     top: -12rem;
-    rotate: -30deg;
+    rotate: -30deg; /* Rotaciona o elemento */
     z-index: -1;
+    overflow: hidden;
+    & img {
+      width: 50%;
+      position: absolute;
+      top: -7.5rem;
+      rotate: 30deg;
+    }
   }
 }
 #hero {
