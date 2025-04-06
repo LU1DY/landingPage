@@ -220,34 +220,7 @@ header {
 #checkbox:checked + .toggle {
   transform: rotate(-90deg);
 }
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  & .background-body {
-    content: "";
-    width: 140rem;
-    height: 60rem;
-    background-color: #fcbabc;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 30rem;
-    position: absolute;
-    right: -60rem;
-    top: -12rem;
-    rotate: -30deg; /* Rotaciona o elemento */
-    z-index: -1;
-    overflow: hidden;
-    & img {
-      width: 50%;
-      position: absolute;
-      top: -7.5rem;
-      rotate: 30deg;
-    }
-  }
-}
+
 #hero {
   width: 100%;
   height: 100dvh;
@@ -358,13 +331,43 @@ body {
     }
   }
 }
-
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  & .background-body {
+    content: "";
+    width: 140rem;
+    height: 60rem;
+    background-color: #fcbabc;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30rem;
+    position: absolute;
+    right: -60rem;
+    top: -12rem;
+    rotate: -30deg; /* Rotaciona o elemento */
+    z-index: -1;
+    overflow: hidden;
+    & img {
+      width: 50%;
+      position: absolute;
+      top: -7.5rem;
+      rotate: 30deg;
+    }
+  }
+}
 #sobre {
-  height: 100dvh;
+  height: 100%;
   position: relative;
   width: 100%;
+  justify-content: end;
+  padding: 15rem 0;
   & .acordeao {
     font-family: "Nunito", sans-serif;
+    justify-content: end;
     & .headerSobre {
       margin-bottom: 3rem;
       & h2 {
@@ -441,6 +444,38 @@ body {
           }
         }
       }
+    }
+  }
+  &::before {
+    content: "";
+    width: 130rem;
+    object-fit: contain;
+    height: 75rem;
+    background: url(/app/fundoSobre2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30rem;
+    position: absolute;
+    right: 40rem;
+    top: 3rem;
+    rotate: -367deg;
+    z-index: -1;
+    overflow: hidden;
+  }
+  & .colSobre {
+    position: absolute;
+    left: 5rem;
+    top: -4rem;
+    & .picDog {
+      width: 60rem;
+    }
+    & .shadow {
+      position: absolute;
+      width: 50rem;
+      filter: blur(30px);
+      left: 3rem;
+      bottom: -12rem;
     }
   }
 }
