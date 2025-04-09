@@ -359,6 +359,54 @@ body {
     }
   }
 }
+#servicos {
+  font-family: "Nunito", sans-serif;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  & .headerServicos {
+    & h2 {
+      font-size: 5rem;
+      font-weight: 900;
+      text-transform: capitalize;
+    }
+    & p {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  & .sobre {
+    width: 100%;
+    & p {
+      width: 67rem;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+  }
+  & .servicos {
+    & .picDogServicos {
+      position: absolute;
+      transform: translate(-56%, -50%);
+      left: 50%;
+      top: 50%;
+      width: 60rem;
+      z-index: 2;
+    }
+    & .shadowServicos {
+      position: absolute;
+      width: 55rem;
+      height: 35rem;
+      filter: blur(50px);
+      left: 50%;
+      top: 50%;
+      transform: translate(-48%, 31%);
+      z-index: 1;
+    }
+  }
+}
 #sobre {
   height: 100%;
   position: relative;
@@ -451,7 +499,7 @@ body {
     width: 130rem;
     object-fit: contain;
     height: 75rem;
-    background: url('../assets/fundoSobre2.png');
+    background: url("../assets/fundoSobre2.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -469,13 +517,16 @@ body {
     top: -4rem;
     & .picDog {
       width: 60rem;
+      z-index: 2;
+      position: inherit;
     }
     & .shadow {
       position: absolute;
       width: 50rem;
       filter: blur(30px);
       left: 3rem;
-      bottom: -12rem;
+      bottom: -84rem;
+      z-index: 1;
     }
   }
 }
