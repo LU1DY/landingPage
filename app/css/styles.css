@@ -387,21 +387,55 @@ body {
     }
   }
   & .servicos {
+    & ul {
+      margin: 10rem 0;
+      height: 82dvh;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+      & li {
+        justify-content: space-between;
+        &:first-child {
+          width: 60%;
+        }
+        &:nth-child(2) {
+          width: 75%;
+        }
+        &:last-child {
+          width: 60%;
+        }
+        & .offer {
+          & p {
+            font-family: "Outfit", sans-serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+          }
+          & img {
+            object-fit: contain;
+            height: 10rem;
+            width: 10rem;
+          }
+        }
+      }
+    }
     & .picDogServicos {
       position: absolute;
       transform: translate(-56%, -50%);
       left: 50%;
       top: 50%;
-      width: 60rem;
+      width: 55rem;
       z-index: 2;
     }
     & .shadowServicos {
       position: absolute;
-      width: 55rem;
-      height: 35rem;
+      width: 57rem;
+      height: 30rem;
       filter: blur(50px);
-      left: 50%;
-      top: 50%;
+      left: 43%;
+      rotate: 41deg;
+      top: 63%;
       transform: translate(-48%, 31%);
       z-index: 1;
     }
